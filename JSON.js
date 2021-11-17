@@ -4,16 +4,17 @@ let jsonObject=
 "age":25, //number as json value
 "isMale":true, //boolean as json value
 "subjects":["WF","ML","SADP"], //array as json value
-"nothing":null,
+"nothing":null,//null as as Json Value
 "Hobbies":{"inDoor":"Pubg","outDoor":"Cricket"},//json value as object
 // "Greet":()=>console.log("Hello Satish"),//json value as a function
 // "Job":undefined//json value as undefined
 }
 
-// console.log(jsonObject.Greet());
+//  console.log(jsonObject.Greet());
 
-let parsedObj=JSON.stringify(jsonObject);
-console.log(parsedObj);
+let JSONtostr=JSON.stringify(jsonObject);
+console.log(JSONtostr);
 
-let jsonObj=JSON.parse(parsedObj);
-console.log(jsonObj);
+let str='{"Animal":"Dog","Breed":"Lanradoor","age":25}';
+let strtoJSON=JSON.parse(str);
+console.log(strtoJSON);
