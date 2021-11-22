@@ -1,28 +1,29 @@
-// function displayResult(result) {
-//     document.getElementById("root").innerHTML = result;
-//   }
-// function increseValue(val) {
-//     document.getElementById("root1").innerHTML = val+10;
-// }
+/*
+A callback function is a function passed into another function as an argument,
+which is then invoked inside the outer function to complete some kind of routine or action. 
 
-//   function myCalculator(num1, num2,displayResult,increseValue) {
-//     let total = num1 + num2;
-//     displayResult(total);
-//     increseValue(total);
-//   }
-  
-//   myCalculator(5, 5, displayResult,increseValue);
-  function display(text) {
-      document.getElementById("root").innerHTML="Hello "+text;
-      // console.log("Hello",text);
-  }
-function user(name,cb) {
-    cb(name);
+*/
+// function message()
+// {
+//     console.log("Hello World");
+// }
+// function sayName(name)
+// {
+//     console.log("My name is "+name)
+// }
+// setTimeout(sayName,2000)
+// message();
+
+// function
+function greet(name, callback) {
+    console.log('Hi' + ' ' + name);
+    callback();
 }
 
-user("Satish",display);
+// callback function
+function callMe() {
+    console.log('How are You....!');
+}
 
-/*
-JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
-callback is fully functional function which is passed to other function as parameter.
- */
+// passing function as an argument
+greet('Peter', callMe);

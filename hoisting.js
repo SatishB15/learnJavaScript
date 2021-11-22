@@ -16,3 +16,7 @@ Note that doing so can lead to unexpected errors, and is not generally recommend
 If we forget the declaration altogether (and only initialize the value) the variable isn't hoisted.
 Trying to read the variable before it is initialized results in ReferenceError exception.
 */
+
+let str="Hoisting allows functions to be safely used in code before they are declared";
+str.includes("safely");
+str.in

@@ -1,14 +1,14 @@
 let promise = new Promise((resolve, reject) => {
     
-    let task_performed = false;
+    let task_performed = true;
     if(task_performed) { 
       resolve('The promised task was performed successfully.'); 
     } else { 
       reject('The promised task was not performed.'); 
     } 
   });  
-  promise.then((fromRes) => console.log(fromRes)). 
-    catch((fromRej) => console.log(fromRej));
+  promise.then((fromRes) => console.log("success")). 
+    catch((fromRej) => console.log("rejected"));
 
 /* 
 promise is like real world promise it takes a task to do and promis to the result
