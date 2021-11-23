@@ -1,3 +1,5 @@
+const { array } = require("yargs");
+
 let Emp= [
     {
         id: 1,

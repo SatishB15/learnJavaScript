@@ -59,3 +59,17 @@ function findEmp()
     }
     });
 }
+
+function removeEmployee() {
+    let target=document.forms["myForm"]["name"].value;
+    array.forEach((Element)=>
+    {
+        if(Element.name==target)
+        {
+            let index=array.indexOf(Element);
+            array.splice(index,1);
+        }
+    })
+  }
+// remove Element from end
+// remove element by positional
