@@ -25,7 +25,7 @@ let array=[
     }
 ];
 
-function addEmp()
+function addEmployee()
 {
 
     let Id=document.forms["myForm"]["id"].value;
@@ -42,13 +42,13 @@ function addEmp()
    }
 }
 
-function displayEmp()
+function displayEmployee()
 {
     let str=JSON.stringify(array);
     document.getElementById("disp").innerHTML=str;
 }
 
-function findEmp()
+function findEmployee()
 {
     let found = array.find((value)=>
     {
