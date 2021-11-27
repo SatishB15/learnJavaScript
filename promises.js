@@ -1,20 +1,53 @@
-var promise = new Promise(function(resolve, reject) {
-  const x = "string";
-  const y = "string"
-  if(x === y) {
-    resolve();
-  } else {
-    reject();
-  }
-  });
+const count = true;
+function getCount()
+{
+  return new Promise((Resolve,Reject)=>
+  {
+    if(count)
+    {
+      Resolve("Count is True")
+    }
+    else
+    {
+      Reject("Count is False")
+    }
+  })
+}
+
+// console.log(getCount());
+
+getCount().then(function(Message)
+{
+  console.log(Message);
+  let Name="Satish";
+  return Name;
+}).then(function(nm)
+{
+  console.log("Name is Accessed "+nm);
+}).catch(function(err)
+{
+console.log(err);
+}).finally(function()
+{
+  console.log("It will Execute Any how");
+})
+// let promise = new Promise(function(resolve, reject) {
+//   const x = "string";
+//   const y = "string"
+//   if(x === y) {
+//     resolve("Promiss Resolved");
+//   } else {
+//     reject("Promis 'Some error has occurred'");
+//   }
+//   });
   
-  promise.
-    then(function () {
-      console.log('Success');
-    }).
-    catch(function () {
-      console.log('Some error has occurred');
-    });
+//   promise.
+//     then(function (msg) {
+//       console.log(msg);
+//     }).
+//     catch(function (err) {
+//       console.log(err);
+//     });
   
 /* 
 promise is like real world promise it takes a task to do and promis to the result
