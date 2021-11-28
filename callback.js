@@ -27,3 +27,23 @@ function callMe() {
 
 // passing function as an argument
 greet('Peter', callMe);
+
+// const movies = [
+//     { title:"Kabir singh",year:"2019"},
+//     { title:"Sooryavanshi",year:"2021"}];
+
+// function getMovies(){
+// setTimeout(() => {
+//     movies.forEach((movie, index) => {
+//         console.log(movie.title)
+//     })
+// }, 2000);
+// }
+
+// function createMovies(movie,callback){
+// setTimeout(() => {
+//     movies.push(movie);
+//     callback();
+// }, 4000);
+// }
+// createMovies({ title:"Jay Bhim", year:"2021"},getMovies);
