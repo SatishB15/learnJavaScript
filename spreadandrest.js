@@ -1,11 +1,22 @@
-let str="Hello";
-console.log(str); //it gives string in return
-console.log(...str); //it gives spred string elements
+const arrValue = ['one', 'two', 'three', 'four'];
 
-let arr=[10,20,30,40,50];
-console.log(arr); //it gives array in return
-console.log(...arr); //it gives spred array elements
+// destructuring assignment in arrays
+// assigning remaining elements to y
+const [x, ...y] = arrValue;
 
-let str1=["h","e","l","l","o"];
-console.log(str1);
-console.log(...str1)
+console.log(x); // one
+console.log(y); // ["two", "three", "four"]
+
+
+const person = {
+    Name: 'Sara',
+    age: 25,
+    gender: 'female'    
+}
+
+// destructuring assignment
+// assigning remaining properties to rest
+let { Name, ...rest } = person;
+
+console.log(Name); // Sara
+console.log(rest); // {age: 25, gender: "female"}
