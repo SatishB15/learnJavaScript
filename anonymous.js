@@ -12,6 +12,6 @@ let person = {
     lastName: 'Birhade'
 };
 
-(function () {
-    console.log(`${person.firstName} ${person.lastName}`);
+(function (obj) {
+    console.log(`${obj.firstName} ${obj.lastName}`);
 })(person);
