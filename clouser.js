@@ -1,5 +1,3 @@
-const { DIFF_DELETE } = require("jest-diff");
-
 function makeFunc() {
     var name = 'Mozilla';
     function displayName() {
