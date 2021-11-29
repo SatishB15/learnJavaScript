@@ -22,7 +22,8 @@ asyncFunc();
 
 async function f() {
     console.log('Async function.');
-    return Promise.resolve(1);
+    let Name="Rahul";
+    return Name;
 }
 
 f().then(function(result) {

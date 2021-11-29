@@ -1,3 +1,4 @@
+// Object Destructing
 let Animals={
     Name:"Dog",
     Breed:"Labradour",
@@ -7,8 +8,8 @@ let Animals={
 
 let {Name,Breed,Age,Price}=Animals;
 console.log(Breed);
-// so here we can use Name and other properties directly
 
+// Array Destructing
 let arr=[1,2,3,4,5];
 
 let [a,b,c,d,e]=arr;
