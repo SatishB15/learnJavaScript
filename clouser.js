@@ -16,5 +16,5 @@ global variable lives until page getting closed
 and function variable live when its execution get completed
 
 but here we can call inner function to get the value of its outer scope
-and means inner function is closure of outer function
+it means inner function is closure of outer function
 */
