@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2
+    }
+  ],
+  "user": [
+    {
+      "id": 22,
+      "Name":"Satish",
+      "Age":21,
+      "Email":"satishbirhade16@gmail.com",
+      "Address":"Plot no-38 gut no 2/A"
+    }
+  ]
+}

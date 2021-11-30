@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <script src="./XHR.js"></script> -->
+        <script>
+            function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      document.getElementById("demo").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "sample.txt",true);
+    xhttp.send();
+  }
+        </script>
+    </head>
+<body>
+<h2>The XMLHttpRequest Object</h2>
+<div id="demo">
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+</body>
+</html>
