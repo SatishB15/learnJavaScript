@@ -1,75 +1,32 @@
-let array=[
-    {
-        id:1,
-        name:"Shivam",
-        salary:2000,
-        age:21
-    },
-    {
-        id:2,
-        name:"Pradip",
-        salary:3000,
-        age:21
-    },
-    {
-        id:3,
-        name:"Ejaz",
-        salary:8000,
-        age:21
-    },
-    {
-        id:4,
-        name:"Pankaj",
-        salary:5000,
-        age:21
-    }
-];
-
-function addEmployee()
+// async function getUserDetails(url)
+// {
+//     const response=await fetch(url);
+//     let data=await response.json();
+//     return data;
+// } 
+// let Name="Satish Birhade";
+// let role="KTHM COLLAGE";
+// let Image="./Capture.PNG"
+// let Tag=document.getElementById("userdata");
+// function showUserData()
+// {
+//     let fetchedData=getUserDetails();
+//     let div;
+//     for(let dt of fetchedData.user)
+//     {
+//         div+=`<div class="mainDiv"><div class="card"><img src="${dt.Image}" alt="Image Here" style="height:300px;width:100%">
+//         <div class="container"><h4><b>${dt.Name}</b></h4><p>${dt.role}</p></div></div><div>`;
+//     }
+    
+//     document.getElementById("userdata").innerHTML=div;
+// }
+let Name="Satish Birhade";
+let role="KTHM COLLAGE";
+let Image="./Capture.PNG"
+let Tag=document.getElementById("userdata");
+function showUserData()
 {
-
-    let Id=document.forms["myForm"]["id"].value;
-    let Name=document.forms["myForm"]["name"].value;
-    let Salary=document.forms["myForm"]["salary"].value;
-    let Age=document.forms["myForm"]["age"].value;
-   if(Id && Name && Salary && Age){
-       array.push({id:Id,name:Name,salary:Salary,age:Age});
-       document.forms["myForm"]["id"].value="";
-       document.forms["myForm"]["name"].value="";
-       document.forms["myForm"]["salary"].value="";
-       document.forms["myForm"]["age"].value="";
-
-   }
+    div=`<div class="mainDiv"><div class="card"><img src="${Image}" alt="Image Here" style="height:300px;width:100%">
+        <div class="container"><h4><b>${Name}</b></h4><p>${role}</p></div></div><div>`;
+    document.getElementById("userdata").innerHTML=div;
 }
-
-function displayEmployee()
-{
-    let str=JSON.stringify(array);
-    document.getElementById("disp").innerHTML=str;
-}
-
-function findEmployee()
-{
-    let found = array.find((value)=>
-    {
-    let target=document.forms["myForm"]["name"].value;
-    if(value.name==target)
-    {
-        document.getElementById("disp").innerHTML=target+ " is Found"
-    }
-    });
-}
-
-function removeEmployee() {
-    let target=document.forms["myForm"]["name"].value;
-    array.forEach((Element)=>
-    {
-        if(Element.name==target)
-        {
-            let index=array.indexOf(Element);
-            array.splice(index,1);
-        }
-    })
-  }
-// remove Element from end
-// remove element by positional
