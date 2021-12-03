@@ -31,4 +31,5 @@ console.log(greet("Satish"))
 
 let addition=(a,b)=> a+b;
 
-console.log(addition(3,5));
+console.log(addition(3, 5));
+let app = "username";
