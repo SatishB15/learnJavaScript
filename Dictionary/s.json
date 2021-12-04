@@ -1,0 +1,81 @@
+[
+    {
+        "word": "hill",
+        "phonetic": "hɪl",
+        "phonetics": [
+            {
+                "text": "hɪl",
+                "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hill--1_gb_1.mp3"
+            }
+        ],
+        "origin": "Old English hyll, of Germanic origin; from an Indo-European root shared by Latin collis and Greek kolōnos ‘hill’.",
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definitions": [
+                    {
+                        "definition": "a naturally raised area of land, not as high or craggy as a mountain.",
+                        "synonyms": [
+                            "high ground",
+                            "rising ground",
+                            "prominence",
+                            "eminence",
+                            "elevation",
+                            "rise",
+                            "hillock",
+                            "mound",
+                            "mount",
+                            "knoll",
+                            "hummock",
+                            "tor",
+                            "tump",
+                            "fell",
+                            "pike",
+                            "mesa",
+                            "bank",
+                            "ridge",
+                            "hogback",
+                            "saddleback",
+                            "whaleback",
+                            "heights",
+                            "downs",
+                            "downland",
+                            "foothills",
+                            "drumlin",
+                            "inselberg",
+                            "monadnock",
+                            "wold",
+                            "brae",
+                            "law",
+                            "drum",
+                            "butte",
+                            "koppie",
+                            "berg",
+                            "jebel",
+                            "holt"
+                        ],
+                        "antonyms": [
+                            "plain"
+                        ]
+                    },
+                    {
+                        "definition": "a flock of ruffs.",
+                        "example": "a hill of ruffs looked at from a distance on a sunny day was a very pleasing spectacle",
+                        "synonyms": [],
+                        "antonyms": []
+                    }
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definitions": [
+                    {
+                        "definition": "form (something) into a heap.",
+                        "synonyms": [],
+                        "antonyms": []
+                    }
+                ]
+            }
+        ]
+    }
+]
